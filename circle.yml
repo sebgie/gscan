@@ -11,7 +11,7 @@ test:
 #     - codeclimate-test-reporter < test/coverage/lcov.info
 deployment:
   release:
-    tag: /v[0-9]+(\.[0-9]+)*/
+    tag: /^[0-9]+(\.[0-9]+)*/
     commands:
       - echo "deploying ..."
       # - grunt shipit:stg deploy
